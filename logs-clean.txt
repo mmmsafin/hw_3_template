@@ -1,0 +1,28 @@
+﻿app-1    | listening port=8000 storage=redis
+redis-1  | * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+app-1    | http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | http 172.18.0.1 "GET / HTTP/1.1" 200 -
+app-1    | http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | * Redis version=7.4.12, bits=64, commit=00000000, modified=0, pid=1, just started
+app-1    | http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | * Configuration loaded
+redis-1  | * monotonic clock: POSIX clock_gettime
+redis-1  | * Running mode=standalone, port=6379.
+redis-1  | * Server initialized
+redis-1  | * Reading RDB base file on AOF loading...
+app-1    | http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | * Loading RDB produced by version 7.4.12
+redis-1  | * RDB age 24 seconds
+app-1    | http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | * RDB memory usage when created 0.90 Mb
+redis-1  | * RDB is base AOF
+app-1    | http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | * Done loading RDB, keys loaded: 0, keys expired: 0.
+redis-1  | * DB loaded from base file appendonly.aof.1.base.rdb: 0.001 seconds
+redis-1  | * DB loaded from append only file: 0.001 seconds
+redis-1  | * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+redis-1  | * Ready to accept connections tcp
